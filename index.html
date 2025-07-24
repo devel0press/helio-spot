@@ -1,17 +1,58 @@
 <html>
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One">
   <style>
   body {
-    font-family: "Poiret One", sans-serif;
+    font-family: "Nixie One", sans-serif;
+    background-color: #efebd8;
+    color: #99a4a0;
+    font-weight:bold;
+    padding:4.5em;
+    animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+  overflow:hidden;
   }
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  a {
+      color: #c39b50;
+      text-align: center;
+      
+  }
+.centeredLink {
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+.centeredLink a {
+    text-decoration: none;
+}
+.centeredLink a:hover {
+    border-bottom:1px solid;
+   
+}
+
+.fancyBackground {/*fancy backgrounds are by Jim from MagicPattern at https://www.magicpattern.design/tools/css-backgrounds */
+    
+    background-color: #efebd8;
+opacity: 0.8;
+background: radial-gradient(circle, transparent 20%, #efebd8 20%, #efebd8 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #efebd8 20%, #efebd8 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#e6e0c8 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #e6e0c8 2px, #efebd8 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;}
+
   </style>
 </head>
-<body>
-
-<h1>Hello world! (index)</h1>
-<a href="./timeline">VIEW TIMELINE</a>
-<a href="./about">LEARN MORE</a>
+<body class="fancyBackground">
+<p style="text-align:justify; font-size: 0.8em;">The solar cycle, which refers to the cycle of changes in the activity of the Sun indicated by the appearance of <a href="./about">sunspots</a>, lasts approximately eleven years and is suspected to be correlated with major societal events and civil unrest. Since the 19th century, scientific evidence has supported the hypothesis that the behavior of both humans and animals is in part correlated with environmental factors such as solar and geomagnetic activity, with military conflict being the most evident example. Curiously, scientists have discovered a strange pattern in which wars and other indicators of social and economic unrest are more likely to start at maximum points of the solar cycle (known as “solar maximums”).</p>
+<div>
+<p class="centeredLink"><a href="./timeline">VIEW TIMELINE</a><br><br><a href="./about">LEARN MORE</a></p>
+</div>
 
 </body>
 </html>
+
