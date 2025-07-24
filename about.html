@@ -1,9 +1,105 @@
 <html>
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One">
+  <style>
+  body {
+    font-family: "Nixie One", sans-serif;
+    background-color: black;
+    color: #fdf1d1;
+    padding-left: 5em;
+    padding-right:5em;
+    padding-top: 3em;
+    padding-bottom:3em;
+  }
+  a {
+      color: #d8caa4;
+  }
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d8caa4;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #fdf1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+  </style>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="timeline">View Timeline</a>
+  <a href="about" style="text-decoration:none;">Learn More</a>
+</div>
 
-<h1>Hello world! (about)</h1>
+<span style="font-size:30px;cursor:pointer;float:left; margin-left:-2em;margin-top:-1.5em;" onclick="openNav()">&#9776;</span>
+<div style="float:left; padding:1em; font-weight:bold;">
+<img src="https://live.staticflickr.com/3935/15430820129_bdb34eeb91_b.jpg" alt="Sunspots captured by NASA" style="width:15em;">
+<p style="font-size:0.56em;"><a href="https://www.flickr.com/photos/24662369@N07/15430820129">NASA's SDO Observes Largest Sunspot of the Solar Cycle</a>, <br>&copy; <a href="https://www.flickr.com/photos/24662369@N07">NASA Goddard Photo and Video</a>, <a href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0</a> </p>
+ </div> 
+ <p>We often hear the phrase “history repeats itself,” whether its in reference to politics, the military, or civil rights. But research done on sunspots shows that this may be truer than we think. Could it be that human history is actually occurring in cycles?</p>
+ <p>Sunspots are phenomena that appear on the surface of the Sun as darker than normal. They are caused by magnetic activity that inhibits heat transfer and results in small spots where the surface temperature is reduced. “Solar maximums” occur when solar activity is at its most intense, resulting in a larger number of sunspots. The opposite is true for solar minimums. The solar cycle, lasting about 10-11 years, refers to these oscillations in minimums and maximums of solar activity.</p>
+ <p>Solar cycles are numbered beginning with the first recorded solar cycle, which was in 1755. However, historical tests also indicate that the levels of solar activity were extraordinarily high for longer periods of time during the Great Maximum (900 - 1300 C.E.) and were similarly very low during two Great Minima: the Great Minimum of Spoerer (1420 - 1530 C.E.) and that of Maunder (1645 - 1715 C.E.). Several significant events happened during the Great Maximum, such as the Golden Age of Islam, foundation of the Mongol Empire, and the Black Death. However, due to the unorthodoxy of the Great Maximum and the fact that it occurred before scientific record of solar cycles, these historical events were excluded from the other parts of the website.</p>
+ <p>Our current solar cycle is the 25th, which started in December 2019, reached its solar maximum in October 2024, and is expected to end in 2030.</p>
+ <p>The theory linking solar cycles to human activity was first conceptualized by economist William Stanley Jevons, who hypothesized that the trade cycle fluctuated in tandem with solar activity. He noted that “commercial crises” occurred at ten-to-eleven-year intervals in tandem with solar cycles. Later on, scientist Alexander Chizhevsky theorized that it is in fact all of human history that is influenced by solar cycles. He observed that major European revolutions of the 19th and early 20th centuries occurred in the same years as solar maximums. Upon further investigations, he observed that what he called “the most important historical events” that involved “large numbers of people” happened in the three years surrounding solar maximums. This website only includes events limited to two years around these maximums for simplicity’s sake. This site is in no way meant to be an exhaustive list or an academic analysis on historically significant moments in human history, but rather a visual means of understanding this scientific theory.</p>
+ <p>It can be argued that social unrest occurs constantly, and that many events occurred outside of the time frame surrounding solar maximums. While this may be a more pragmatic response to the theory, statistical tests have been performed to determine the correlation between years with higher geomagnetic activity and numbers of wars or other significant historical events and found that it was statistically significant.</p>
+ <p>Interestingly, science has found that geomagnetic activity increases levels of aggression in not only humans, but rats as well. Other scientific research has observed that admissions to psychiatric hospitals tend to boom with increases in intensity of the natural magnetic field. Based on the available research, it seems as if aggressive human behavior occurs in response to higher levels of solar and geomagnetic activity, and that this is exemplified with military conflict and other events of mass social disruption.</p>
+ <p>These examples of “history repeating itself” have not been overlooked by historians. Most observations have noted similarities between the 9/11 attack on the United States by al-Qaeda and that 10/7 attack on Israel by Hamas, but they neglect the similarities between the solar activity during both events. The same can be said of the student protests against the Vietnam War in 1968, and those against the Gaza war in 2024, both of which occurred in the months surrounding solar maximums. However, what is even more interesting about the latter example is that the similarities don’t stop there. The most notable student protesters that were seen as the epicenter of anti-war student advocacy occupied the same building (Hamilton Hall) in the same university (Columbia University) during both military conflicts. Both protests influenced U.S. presidential elections and resulted in the election of a Republican candidate over a Democratic incumbent.</p>
+ <p>Little research has been done on this after the 2000s/2010s, about our current cycle. However, <a href="https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/">NASA reported the sun reaching it’s maximum phase in the current solar cycle in 2024</a> (and <a href="https://ui.adsabs.harvard.edu/abs/2021cosp...43E1044S/abstract">scientists predict</a> that the next solar cycle, solar cycle 26, will reach its solar maximum in June of 2036). Notable events of late 2024 include revolutions in Bangladesh, the end of the Syrian war, Hamas attack on Israel, and student protests against the war in Palestine. Could this be caused by solar activity? Maybe, maybe not.</p>
+ <h3>Updates</h3>
+ <ul>
+ <li>07/24/2025 - Website created!
+ </ul>
+ <form>
+     <label for="feedback">Send me a message here with any update suggestions!</label><br><br>
+     <input type="text" id="feedback" name="feedback" style="width: 100%; padding:1em; font-family:'Nixie One', sans-serif; border-radius:10px; color: white; background-color:#403f3d; border: none;">
+ </form>
+ <h3><br>Bibliography</h3>
+ <p>Below is a list of informational sources I gathered scientific information from, in order of how integral they were to the development of the website:</p>
+ <ul>
+     <li>Michalec, A. <em>Solar Activity and Human History.</em> Jagiellonian University Astronomical Observatory. <a href="https://www.oa.uj.edu.pl/A.Michalec/history.html">https://www.oa.uj.edu.pl/A.Michalec/history.html</a><br><br>
+     </li>
+         <li>Gorbanev, M. (2025). <em>Extraordinary Economic and Social Events Associated with the Solar Cycle Maximum. </em>Ludwig Maximilian University of Munich. 
+         <a href="https://mpra.ub.uni-muenchen.de/123402/">https://mpra.ub.uni-muenchen.de/123402/</a><br><br></li>
+         <li>Persinger M. A. (1999). Wars and increased solar-geomagnetic activity: aggression or change in intraspecies dominance?. <em>Perceptual and motor skills,</em> 88(3 Pt 2), 1351–1355. <a href="https://doi.org/10.2466/pms.1999.88.3c.1351">https://doi.org/10.2466/pms.1999.88.3c.1351</a> <br><br></li>
+         <li>Payne, B. (2008). War and Sunspot Cycles: A Form of Electromagnetic Pollution. The Epoch Times. <a href="https://www.theepochtimes.com/article/sun-war-electromagnetic-radiation-raymond-wheeler-1528874">https://www.theepochtimes.com/article/sun-war-electromagnetic-radiation-raymond-wheeler-1528874</a><br><br></li>
+         <li>Friedman, H., Becker, R. O., & Bachman, C. H. (1963). Geomagnetic Parameters and Psychiatric Hospital Admissions. <em>Nature,200</em>(4907), 626-628. <a href="https://doi.org/10.1038/200626a0">https://doi.org/10.1038/200626a0</a></li>
+     </ul>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
