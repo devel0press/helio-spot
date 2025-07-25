@@ -1,1 +1,278 @@
-<h1>Hello world! (timeline)</h1>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One">
+  <style>
+  body {
+    font-family: "Nixie One", sans-serif;
+    background-color: #efebd8;
+    color: #99a4a0;
+    font-weight:bold;
+    padding-left: 5em;
+    padding-right:5em;
+    padding-top: 3em;
+    padding-bottom:3em;
+    animation: fadeIn 2s ease-in-out forwards; 
+  opacity: 0;
+  scroll-timeline-name:--myScroller;
+  }
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  a {
+      color: #c39b50;
+  }
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #99a4a0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #efebd8;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #faf8f0;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.timeline {
+    position:relative;
+    max-width:1200px;
+}
+
+.container {
+    padding:10px 50px;
+    position:relative;
+    width:50%;
+    animation:movedown 2s linear forwards;
+    opacity:0;
+    animation-timeline:view();
+    animation-range:entry 30% cover 50%;
+}
+
+@keyframes movedown {
+    0% {
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    100% {
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+.text-box {
+    padding:20px 30px;
+    background:#f6f4e9;
+    position:relative;
+    border-radius:6px;
+}
+
+.left-container {
+    left:0;
+}
+
+.right-container {
+    left:50%;
+}
+
+.container img {
+    position:absolute;
+    width:40px;
+    right:-20px;
+    top:32px;
+    z-index:10;
+}
+
+.right-container img {
+    left:-20px;
+}
+
+.timeline::after {
+    content:'';
+    position:absolute;
+    width:6px;
+    height:100%;
+    background:#e3bec2;
+    top:0;
+    left:50%;
+    margin-left:-3px;
+    z-index:-1;
+    animation:moveline linear forwards;
+    animation-timeline:--myScroller;
+}
+
+@keyframes moveline {
+    0% {
+        height:0;
+    }
+    100% {
+        height:100%;
+    }
+}
+.left-container-arrow {
+    height:0;
+    width:0;
+    position:absolute;
+    top:28px;
+    z-index:1;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:15px solid #f6f4e9;
+    right:-15px;
+}
+
+.right-container-arrow {
+    height:0;
+    width:0;
+    position:absolute;
+    top:28px;
+    z-index:1;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-right:15px solid #f6f4e9;
+    left:-15px;
+}
+.right-container.infobox {
+    margin-top:-10em;
+    top:-2em;
+    margin-left:4em;
+    position:relative;
+}
+
+@media screen and (max-width:600px) {
+    .timeline{
+        margin:50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width:100%;
+        padding-left:80px;
+        padding-right:25px;
+    }
+    .right-container {
+        left:0;
+    }
+    .left-container img, .right-container img {
+        left:10px;
+    }
+    .left-container-arrow, .right-container-arrow {
+        border-right:15px solid #f6f4e9;
+        border-left:0;
+        left:15px;
+    }
+}
+  </style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="timeline">View Timeline</a>
+  <a href="about" style="text-decoration:none;">Learn More</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer;float:left; margin-left:-2em;margin-top:-1.5em;" onclick="openNav()">&#9776;</span>
+
+<div class="timeline">
+    <div class="container left-container">
+        <img src="./star">
+        <div class="text-box">
+            <h2 style="font-weight:normal;">Solar Cycle 1 (1755 - February 1766)</h2>
+            <hr>
+            <p>Solar Maximum: June 1761</p>
+            <span class="left-container-arrow"></span>
+        </div>
+    </div>
+    
+    <div class="container right-container infobox">
+     
+            <h2 style="font-weight:normal;">Solar Cycle 1 (1755 - February 1766)</h2>
+            <hr>
+            <p>Solar Maximum: June 1761</p>
+        
+    </div>
+    
+    <div class="container right-container">
+        <img src="./star">
+        <div class="text-box">
+            <h2 style="font-weight:normal;">Solar Cycle 1 (1755 - February 1766)</h2>
+            <hr>
+            <p>Solar Maximum: June 1761</p>
+       <span class="right-container-arrow"></span> </div>
+        
+    </div>
+    
+    <div class="container left-container">
+    <img src="./star">
+        <div class="text-box">
+            <h2 style="font-weight:normal;">Solar Cycle 1 (1755 - February 1766)</h2>
+            <hr>
+            <p>Solar Maximum: June 1761</p>
+                <span class="left-container-arrow"></span>
+</div>
+    </div>
+    
+    
+    <div class="container right-container">
+    <img src="./star">
+        <div class="text-box">
+            <h2 style="font-weight:normal;">Solar Cycle 1 (1755 - February 1766)</h2>
+            <hr>
+            <p>Solar Maximum: June 1761</p>
+                <span class="right-container-arrow"></span>
+</div>
+    </div>
+    
+    
+    <div class="container left-container">
+    <img src="./star">
+        <div class="text-box">
+            <h2 style="font-weight:normal;">Solar Cycle 1 (1755 - February 1766)</h2>
+            <hr>
+            <p>Solar Maximum: June 1761</p>
+                <span class="left-container-arrow"></span>
+</div>
+    </div>
+    
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
