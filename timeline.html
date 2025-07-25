@@ -68,7 +68,6 @@
 }
 
 .container {
-    padding:10px 50px;
     position:relative;
     width:50%;
     animation:movedown 2s linear forwards;
@@ -96,11 +95,13 @@
 }
 
 .left-container {
-    left:0;
+    left:-8%;
+    padding-right:50px;
 }
 
 .right-container {
     left:50%;
+    padding-left:50px
 }
 
 .container img {
@@ -161,10 +162,18 @@
     left:-15px;
 }
 .right-container.infobox {
+    padding:10px;
     margin-top:-10em;
     top:-2em;
     margin-left:4em;
     position:relative;
+}
+.left-container.infobox {
+    margin-top:-10em;
+    top:-2em;
+    margin-right:4em;
+    position:relative;
+  padding:10px;
 }
 
 @media screen and (max-width:600px) {
@@ -203,7 +212,7 @@
   background-color: #efebd8;
   color: #99a4a0;
   font-size: 16px;
-  border:none;
+  border:2px solid #efebd8;
   font-family:"Nixie One", sans-serif;
   font-weight:bolder;
 }
