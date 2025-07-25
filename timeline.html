@@ -191,6 +191,47 @@
         left:15px;
     }
 }
+
+  .left-container.infobox {
+    margin-top:-10em;
+    top:-2em;
+    margin-right:4em;
+    position:relative;
+}
+
+.dropbtn {
+  background-color: #efebd8;
+  color: #99a4a0;
+  font-size: 16px;
+  border:none;
+  font-family:"Nixie One", sans-serif;
+  font-weight:bolder;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #99a4a0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #efebd8;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   </style>
 </head>
 <body>
@@ -202,6 +243,14 @@
 
 <span style="font-size:30px;cursor:pointer;float:left; margin-left:-2em;margin-top:-1.5em;" onclick="openNav()">&#9776;</span>
 
+<div class="dropdown" style="float:right; margin-right:-1em; margin-top:-1.5em;">
+  <button class="dropbtn">Jump to:</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 <div class="timeline">
     <div class="container left-container">
         <img src="./star">
